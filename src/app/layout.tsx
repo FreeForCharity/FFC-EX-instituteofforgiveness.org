@@ -15,25 +15,27 @@ import {
   cinzel,
 } from '@/lib/fonts'
 
-// Get basePath for GitHub Pages deployment
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || ''
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://ffcworkingsite1.org'),
+  metadataBase: new URL('https://instituteofforgiveness.org'),
   title: {
-    default: 'Free For Charity | Reduce Costs, Increase Impact',
-    template: '%s | Free For Charity',
+    default: 'Institute of Forgiveness | Ending Mass Incarceration Through Forgiveness',
+    template: '%s | Institute of Forgiveness',
   },
   description:
-    'Free For Charity connects students, professionals, and businesses with nonprofits to reduce costs and increase revenues—putting more resources back into their missions.',
+    'The Institute of Forgiveness is a Richmond, Virginia mentoring institute working toward juvenile and criminal justice reform — providing trade training, re-entry services, and startup assistance for those with current or previous justice involvement.',
   keywords: [
-    'nonprofit',
-    'charity',
-    'volunteer',
-    'donate',
-    'free hosting',
-    'domains',
-    'Microsoft 365',
+    'Institute of Forgiveness',
+    'criminal justice reform',
+    'juvenile justice reform',
+    're-entry services',
+    'Richmond Virginia nonprofit',
+    'Sheba Williams',
+    'Nolef Turns',
+    'barbering trade program',
+    'mentoring',
+    'recidivism',
   ],
   robots: {
     index: true,
@@ -51,26 +53,26 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: 'website',
-    url: 'https://ffcworkingsite1.org/',
-    siteName: 'Free For Charity',
-    title: 'Free For Charity | Reduce Costs, Increase Impact',
+    url: 'https://instituteofforgiveness.org/',
+    siteName: 'Institute of Forgiveness',
+    title: 'Institute of Forgiveness | Ending Mass Incarceration Through Forgiveness',
     description:
-      'Connecting students, professionals, and businesses with nonprofits to reduce costs and increase revenues.',
+      'Mentoring, trade training, and re-entry services for those with juvenile and criminal justice involvement in Richmond, VA.',
     images: [
       {
         url: '/web-app-manifest-512x512.png',
         width: 512,
         height: 512,
-        alt: 'Free For Charity',
+        alt: 'Institute of Forgiveness',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    site: '@freeforcharity',
-    title: 'Free For Charity | Reduce Costs, Increase Impact',
+    site: '@ioforgiveness',
+    title: 'Institute of Forgiveness',
     description:
-      'Connecting students, professionals, and businesses with nonprofits to reduce costs and increase revenues.',
+      'Mentoring, trade training, and re-entry services for those with juvenile and criminal justice involvement.',
     images: ['/web-app-manifest-512x512.png'],
   },
   icons: {
@@ -90,23 +92,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Preconnect to external domains for faster resource loading */}
         <link rel="preconnect" href="https://www.googletagmanager.com" />
-        <link rel="preconnect" href="https://ffcsites.org" />
-        <link rel="preconnect" href="https://www.zeffy.com" />
-        <link rel="preconnect" href="https://widgets.guidestar.org" />
+        <link rel="preconnect" href="https://donorbox.org" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
-        <link rel="dns-prefetch" href="https://ffcsites.org" />
-        <link rel="dns-prefetch" href="https://www.zeffy.com" />
-        <link rel="dns-prefetch" href="https://www.idealist.org" />
-
-        {/* Preload critical LCP image */}
-        <link
-          rel="preload"
-          as="image"
-          href={`${basePath}/Images/figma-hero-img.webp`}
-          fetchPriority="high"
-        />
+        <link rel="dns-prefetch" href="https://donorbox.org" />
 
         <GoogleTagManager />
       </head>
@@ -125,13 +114,10 @@ export default function RootLayout({
         suppressHydrationWarning={true}
       >
         <GoogleTagManagerNoScript />
-        {/* <PopupProvider> */}
         <Header />
         {children}
         <Footer />
         <CookieConsent />
-        {/* <PopupsRootClient /> */}
-        {/* </PopupProvider> */}
       </body>
     </html>
   )

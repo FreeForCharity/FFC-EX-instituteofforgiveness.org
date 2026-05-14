@@ -2,88 +2,92 @@
 
 import React from 'react'
 import Link from 'next/link'
-import { Mail, Phone, MapPin, ArrowRight } from 'lucide-react'
+import { Mail, Phone, MapPin } from 'lucide-react'
 
-import { FaFacebookF, FaLinkedinIn, FaGithub } from 'react-icons/fa'
+import { FaFacebookF, FaLinkedinIn, FaInstagram } from 'react-icons/fa'
 import { FaXTwitter } from 'react-icons/fa6'
 
 const Footer: React.FC = () => {
   const currentYear = React.useMemo(() => new Date().getFullYear(), [])
   const socialLinks = [
-    { icon: FaFacebookF, href: 'https://www.facebook.com/freeforcharity', label: 'Facebook' },
-    { icon: FaXTwitter, href: 'https://x.com/freeforcharity1', label: 'X (Twitter)' },
+    {
+      icon: FaFacebookF,
+      href: 'https://www.facebook.com/instituteofforgiveness',
+      label: 'Facebook',
+    },
+    {
+      icon: FaInstagram,
+      href: 'https://www.instagram.com/instituteofforgiveness',
+      label: 'Instagram',
+    },
+    { icon: FaXTwitter, href: 'https://twitter.com/ioforgiveness', label: 'X (Twitter)' },
     {
       icon: FaLinkedinIn,
-      href: 'https://www.linkedin.com/company/freeforcharity/',
+      href: 'https://www.linkedin.com/company/instituteofforgiveness',
       label: 'LinkedIn',
     },
-    {
-      icon: FaGithub,
-      href: 'https://github.com/FreeForCharity/FFC_Single_Page_Template',
-      label: 'GitHub',
-    },
   ]
+
   return (
-    <footer className="bg-black text-white">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 py-12 px-4 md:px-6 lg:px-8">
-        {/* Column 1: Endorsements */}
-        <div className="space-y-6 px-4 sm:px-0">
-          <h3 className="text-[28px] text-white">Endorsements</h3>
-
-          <div className="space-y-4">
-            <a
-              href="https://www.guidestar.org/profile/46-2471893"
-              aria-label="View Free For Charity GuideStar Profile"
+    <footer className="bg-[#2A1430] text-white">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-8 px-4 py-12 md:grid-cols-2 md:px-6 lg:grid-cols-3 lg:px-8">
+        {/* Column 1: About */}
+        <div className="space-y-5 px-4 sm:px-0">
+          <div className="flex items-center gap-3">
+            <span
+              className="flex h-[48px] w-[48px] items-center justify-center rounded-full bg-[#F5C76A] text-[18px] font-[700] text-[#3D1E4D]"
+              id="cinzel"
             >
-              <img src="/Svgs/footerImage.svg" alt="GuideStar Platinum Seal of Transparency" />
-            </a>
-            <Link
-              href="https://www.guidestar.org/profile/shared/bbbe173a-87b9-4af9-a8a2-cae255a95742"
-              className="group relative my-4 flex w-full max-w-[230px] items-center justify-between
-                border-2 border-[#2ea3f2] bg-black px-5 py-2.5 text-[#2ea3f2]
-                transition-all duration-300 hover:border-transparent"
-              id="aria-font"
-            >
-              <span className="text-[17px] font-medium leading-tight sm:text-[18px] md:text-[20px] transition-transform duration-300 group-hover:-translate-x-1">
-                Direct GuideStar Profile Link
-              </span>
-
-              <ArrowRight
-                className="h-8 w-8 translate-x-2 opacity-0 text-[#2ea3f2] transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100"
-                strokeWidth={2}
-              />
-            </Link>
-
-            <p>
-              <span className="font-[500] text-[22px]">Free For Charity EIN: 46-2471893</span>
-            </p>
+              IoF
+            </span>
+            <h3 className="text-[22px] font-[600]" id="faustina-font">
+              Institute of Forgiveness
+            </h3>
           </div>
+          <p className="text-[15px] leading-[170%] text-white/80" id="lato-font">
+            A mentoring institute for those with previous justice involvement. We work toward
+            juvenile and criminal justice reform and rebuilding the core foundations of family and
+            community.
+          </p>
+          <p className="text-[14px] text-[#F5C76A]" id="lato-font">
+            A subsidiary of{' '}
+            <Link
+              href="https://www.nolefturns.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-[#FFD888]"
+            >
+              Nolef Turns Inc.
+            </Link>{' '}
+            &middot; 501(c)(3) EIN 47-5341386
+          </p>
         </div>
 
         {/* Column 2: Quick Links */}
-        <div className="space-y-6 px-4 sm:px-0">
-          <h3 className="text-[28px] text-white">Quick Links</h3>
-
+        <div className="space-y-5 px-4 sm:px-0">
+          <h3 className="text-[20px] font-[600] text-[#F5C76A]" id="faustina-font">
+            Explore
+          </h3>
           <ul className="space-y-2 text-sm" id="lato-font">
             {[
               { name: 'Home', href: '/#hero' },
               { name: 'Mission', href: '/#mission' },
               { name: 'Programs', href: '/#programs' },
-              { name: 'Events', href: '/#events' },
+              { name: 'Your Impact', href: '/#impact' },
               { name: 'Donate', href: '/#donate' },
-              { name: 'Volunteer', href: '/#volunteer' },
-              { name: 'FAQ', href: '/#faq' },
-              { name: 'Team', href: '/#team' },
+              { name: 'Contact', href: '/#contact' },
+              { name: 'About', href: '/about' },
               {
-                name: 'Supported Charity Login',
-                href: 'https://freeforcharity.org/hub/',
+                name: 'Donorbox Giving Page',
+                href: 'https://donorbox.org/institute-of-forgiveness',
               },
             ].map((link) => (
               <li key={link.name}>
                 <Link
                   href={link.href}
                   target={link.href.startsWith('http') ? '_blank' : undefined}
-                  className="hover:text-[#F58C23] hover:tracking-widest transition-all text-[16px] font-[500]"
+                  rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                  className="text-[15px] font-[500] text-white/80 transition-colors hover:text-[#F5C76A]"
                 >
                   {link.name}
                 </Link>
@@ -91,124 +95,84 @@ const Footer: React.FC = () => {
             ))}
           </ul>
 
-          <div className="space-y-3">
-            <h4 className="text-[28px] text-white">Free For Charity Policy</h4>
+          <div className="space-y-2">
+            <h4 className="text-[16px] font-[600] text-[#F5C76A]" id="faustina-font">
+              Policies
+            </h4>
             <ul className="space-y-1 text-sm" id="lato-font">
-              {[
-                {
-                  name: 'Free For Charity Donation Policy',
-                  href: '/free-for-charity-donation-policy',
-                },
-                {
-                  name: 'Donation Policy',
-                  href: '/donation-policy',
-                },
-                {
-                  name: 'Free For Charity Privacy Policy',
-                  href: '/privacy-policy',
-                },
-                {
-                  name: 'Free For Charity Cookie Policy',
-                  href: '/cookie-policy',
-                },
-                {
-                  name: 'Free For Charity Terms of Service',
-                  href: '/terms-of-service',
-                },
-                {
-                  name: 'Free For Charity Vulnerability Disclosure Policy',
-                  href: '/vulnerability-disclosure-policy',
-                },
-                {
-                  name: 'Free For Charity Security Acknowledgement',
-                  href: '/security-acknowledgements',
-                },
-              ].map((link) => (
-                <li key={link.name}>
-                  <Link
-                    href={link.href}
-                    className="hover:text-[#F58C23] hover:tracking-widest transition-all text-[16px] font-[500]"
-                  >
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
+              <li>
+                <Link
+                  href="/privacy-policy"
+                  className="text-[14px] text-white/70 transition-colors hover:text-[#F5C76A]"
+                >
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/terms-of-service"
+                  className="text-[14px] text-white/70 transition-colors hover:text-[#F5C76A]"
+                >
+                  Terms of Service
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
 
-        {/* Column 3: Contact Us */}
-        <div className="space-y-6 px-4 sm:px-0">
-          <h3 className="text-[28px] text-white">Contact Us</h3>
-
+        {/* Column 3: Contact */}
+        <div className="space-y-5 px-4 sm:px-0">
+          <h3 className="text-[20px] font-[600] text-[#F5C76A]" id="faustina-font">
+            Contact
+          </h3>
           <div className="space-y-4 text-sm">
             <div className="flex items-start gap-3">
-              <Mail className="w-10 h-10 text-orange-500 flex-shrink-0 mt-0.5" />
+              <Mail className="mt-0.5 h-6 w-6 flex-shrink-0 text-[#F5C76A]" />
               <div>
-                <p className="font-[500] text-[22px]">E-mail</p>
+                <p className="text-[15px] font-[500] text-white/70">E-mail</p>
                 <a
-                  href="mailto:clarkemoyer@freeforcharity.org"
-                  className="font-[500] text-[15px] hover:text-cyan-400 transition-colors break-all"
-                  id="aria-font"
+                  href="mailto:info@instituteofforgiveness.org"
+                  className="text-[15px] font-[500] text-white transition-colors hover:text-[#F5C76A] break-all"
+                  id="lato-font"
                 >
-                  clarkemoyer@freeforcharity.org
+                  info@instituteofforgiveness.org
                 </a>
               </div>
             </div>
 
             <div className="flex items-start gap-3">
-              <Phone className="w-10 h-10 text-orange-500 flex-shrink-0 mt-0.5" />
+              <Phone className="mt-0.5 h-6 w-6 flex-shrink-0 text-[#F5C76A]" />
               <div>
-                <p className="font-[500] text-[22px]">Call Us Today</p>
+                <p className="text-[15px] font-[500] text-white/70">Phone</p>
                 <a
-                  href="tel:5202228104"
-                  className="font-[500] text-[16px] hover:text-cyan-400 transition-colors"
-                  id="aria-font"
+                  href="tel:8049186195"
+                  className="text-[15px] font-[500] text-white transition-colors hover:text-[#F5C76A]"
+                  id="lato-font"
                 >
-                  (520) 222-8104
+                  (804) 918-6195
                 </a>
               </div>
             </div>
 
             <a
-              href="https://www.google.com/maps/search/?api=1&query=4030+Wake+Forrest+Road+Suite+349+Raleigh+NC+27609"
+              href="https://www.google.com/maps/search/?api=1&query=2317+Westwood+Ave+Suite+115-C+Richmond+VA+23230"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Open main address in Google Maps"
-              className="flex items-start gap-3 hover:opacity-80 transition-opacity"
+              aria-label="Open address in Google Maps"
+              className="flex items-start gap-3 transition-opacity hover:opacity-80"
             >
-              <MapPin className="w-10 h-10 text-orange-500 flex-shrink-0 mt-0.5" />
+              <MapPin className="mt-0.5 h-6 w-6 flex-shrink-0 text-[#F5C76A]" />
               <div>
-                <p className="font-[500] text-[22px]">Main Address</p>
-                <p className="font-[500] text-[16px]" id="aria-font">
-                  4030 Wake Forrest Road
+                <p className="text-[15px] font-[500] text-white/70">Address</p>
+                <p className="text-[15px] font-[500] text-white" id="lato-font">
+                  2317 Westwood Ave. Ste. 115-C
                   <br />
-                  Suite 349 Raleigh North
-                  <br />
-                  Carolina 27609
+                  Richmond, VA 23230-4019
                 </p>
               </div>
             </a>
 
-            <a
-              href="https://www.google.com/maps/place/Free+For+Charity/@40.7768455,-77.8963305,17z/data=!3m1!4b1!4m6!3m5!1s0x89cea944b44a2e01:0x6fc2d6bf09e00a0f!8m2!3d40.7768415!4d-77.8937556!16s%2Fg%2F11vzvbl2d7?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Open PA office address in Google Maps"
-              className="flex items-start gap-3 hover:opacity-80 transition-opacity"
-            >
-              <MapPin className="w-10 h-10 text-orange-500 flex-shrink-0 mt-0.5" />
-              <div>
-                <p className="font-[500] text-[22px]">PA Office Address</p>
-                <p className="font-[500] text-[16px]" id="aria-font">
-                  301 Science Park Road Suite
-                  <br />
-                  119 State College PA 16803
-                </p>
-              </div>
-            </a>
-
-            <div className="flex gap-3 pt-4">
+            <div className="flex gap-3 pt-2">
               {socialLinks.map(({ icon: Icon, href, label }, index) => (
                 <a
                   key={index}
@@ -216,9 +180,9 @@ const Footer: React.FC = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={label}
-                  className="bg-orange-500 p-2 rounded-full hover:bg-orange-600 transition-colors"
+                  className="rounded-full bg-[#F5C76A] p-2 text-[#3D1E4D] transition-colors hover:bg-[#FFD888]"
                 >
-                  <Icon className="w-6 h-6 text-white" />
+                  <Icon className="h-5 w-5" />
                 </a>
               ))}
             </div>
@@ -226,19 +190,19 @@ const Footer: React.FC = () => {
         </div>
       </div>
 
-      {/* Bottom Bar */}
       <div
-        className="mt-12 py-6 px-4 border-t border-gray-800 text-center text-[18px] font-[500] w-full"
-        id="aria-font"
+        className="mt-8 w-full border-t border-white/10 px-4 py-6 text-center text-[14px] font-[500]"
+        id="lato-font"
       >
         <p>
-          © {currentYear} All Rights Are Reserved by Free For Charity a US 501c3 Non Profit | A
-          project of{' '}
+          &copy; {currentYear} Institute of Forgiveness. All rights reserved. &middot; Hosted by{' '}
           <Link
             href="https://freeforcharity.org"
-            className="underline text-[#2EA3F2] hover:text-[#2EA3F2] transition-colors"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline text-[#F5C76A] transition-colors hover:text-[#FFD888]"
           >
-            https://freeforcharity.org
+            Free For Charity
           </Link>
         </p>
       </div>
