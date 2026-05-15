@@ -15,22 +15,13 @@ const DonateCTA: React.FC = () => {
       />
 
       <div className="relative z-10 mx-auto w-[92%] max-w-[980px] text-center">
-        <p
-          className="text-[13px] uppercase tracking-[0.28em] text-[#F5C76A] mb-[18px]"
-          id="aria-font"
-        >
+        <p className="text-[13px] uppercase tracking-[0.28em] text-[#F5C76A] mb-[18px] aria-font">
           Stand for Forgiveness
         </p>
-        <h2
-          className="text-[36px] md:text-[48px] font-[500] leading-[115%] mb-[24px]"
-          id="faustina-font"
-        >
+        <h2 className="text-[36px] md:text-[48px] font-[500] leading-[115%] mb-[24px] faustina-font">
           As we tackle the injustice system, our clients&apos; needs grow with us.
         </h2>
-        <p
-          className="mx-auto max-w-[720px] text-[18px] leading-[165%] text-white/85 mb-[40px]"
-          id="lato-font"
-        >
+        <p className="mx-auto max-w-[720px] text-[18px] leading-[165%] text-white/85 mb-[40px] lato-font">
           Please consider a tax-deductible gift today. If you cannot give monetarily, we welcome you
           as a volunteer or mentor — both are vital to the work.
         </p>
@@ -40,24 +31,19 @@ const DonateCTA: React.FC = () => {
             href="https://donorbox.org/institute-of-forgiveness"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex h-[58px] items-center justify-center rounded-full bg-[#F5C76A] px-[40px] text-[18px] font-[600] text-[#3D1E4D] transition hover:bg-[#FFD888]"
-            id="lato-font"
+            className="inline-flex h-[58px] items-center justify-center rounded-full bg-[#F5C76A] px-[40px] text-[18px] font-[600] text-[#3D1E4D] transition hover:bg-[#FFD888] lato-font"
           >
             Donate via Donorbox
           </a>
           <a
             href="mailto:info@instituteofforgiveness.org?subject=Volunteer%20%2F%20Mentor%20Inquiry"
-            className="inline-flex h-[58px] items-center justify-center rounded-full border-2 border-white/70 bg-transparent px-[36px] text-[17px] font-[500] text-white transition hover:bg-white/10"
-            id="lato-font"
+            className="inline-flex h-[58px] items-center justify-center rounded-full border-2 border-white/70 bg-transparent px-[36px] text-[17px] font-[500] text-white transition hover:bg-white/10 lato-font"
           >
             Volunteer or Mentor
           </a>
         </div>
 
-        <p
-          className="mx-auto mt-[36px] max-w-[760px] text-[13px] leading-[160%] text-white/60"
-          id="lato-font"
-        >
+        <p className="mx-auto mt-[36px] max-w-[760px] text-[13px] leading-[160%] text-white/60 lato-font">
           The Institute of Forgiveness is a subsidiary of Nolef Turns Inc., a 501(c)(3) charitable
           organization, EIN 47-5341386. All donations are deemed tax-deductible absent any
           limitations on deductibility applicable to a particular taxpayer.
