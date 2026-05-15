@@ -1,8 +1,8 @@
 {
-  "name": "",
-  "short_name": "",
-  "icons": [],
-  "theme_color": "#ffffff",
+  "name": "Institute of Forgiveness",
+  "short_name": "IoF",
+  "icons": [{ "src": "/icon.svg", "type": "image/svg+xml", "sizes": "any" }],
+  "theme_color": "#4B2447",
   "background_color": "#ffffff",
   "display": "standalone"
 }
