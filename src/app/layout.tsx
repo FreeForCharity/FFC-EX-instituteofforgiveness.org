@@ -60,9 +60,9 @@ export const metadata: Metadata = {
       'Mentoring, trade training, and re-entry services for those with juvenile and criminal justice involvement in Richmond, VA.',
     images: [
       {
-        url: '/web-app-manifest-512x512.png',
-        width: 512,
-        height: 512,
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
         alt: 'Institute of Forgiveness',
       },
     ],
@@ -73,7 +73,7 @@ export const metadata: Metadata = {
     title: 'Institute of Forgiveness',
     description:
       'Mentoring, trade training, and re-entry services for those with juvenile and criminal justice involvement.',
-    images: ['/web-app-manifest-512x512.png'],
+    images: ['/og-image.png'],
   },
   icons: {
     icon: [
