@@ -94,10 +94,9 @@ const Header: React.FC = () => {
               aria-label="Institute of Forgiveness"
             >
               <span
-                className={`flex items-center justify-center rounded-full bg-[#F5C76A] font-[700] text-[#3D1E4D] transition-all duration-300 ${
+                className={`flex items-center justify-center rounded-full bg-[#F5C76A] font-[700] text-[#3D1E4D] transition-all duration-300 cinzel ${
                   isScrolled ? 'h-[36px] w-[36px] text-[14px]' : 'h-[44px] w-[44px] text-[16px]'
                 }`}
-                id="cinzel"
               >
                 IoF
               </span>
@@ -106,10 +105,8 @@ const Header: React.FC = () => {
                   isScrolled ? 'text-[14px]' : 'text-[16px]'
                 }`}
               >
-                <span className="font-[600]" id="faustina-font">
-                  Institute of Forgiveness
-                </span>
-                <span className="hidden sm:block text-[11px] text-[#F5C76A]" id="aria-font">
+                <span className="font-[600] faustina-font">Institute of Forgiveness</span>
+                <span className="hidden sm:block text-[11px] text-[#F5C76A] aria-font">
                   Mentoring &middot; Re-Entry &middot; Reform
                 </span>
               </span>
@@ -117,13 +114,13 @@ const Header: React.FC = () => {
 
             <div className="flex items-center">
               <nav className="hidden lg:block transition-all duration-300" aria-label="Primary">
-                <ul className="flex items-center" id="aria-font">
+                <ul className="flex items-center aria-font">
                   {menuItems.map((item, index) => (
                     <li key={index} className="relative">
                       <Link
                         href={item.path}
                         onClick={handleLinkClick}
-                        className={`flex items-center px-3 py-2 text-[14px] font-[500] transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F5C76A] rounded ${
+                        className={`flex items-center px-3 py-2 text-[14px] font-[500] transition-colors duration-200 ${
                           isActive(item.path)
                             ? 'text-[#F5C76A]'
                             : 'text-white/80 hover:text-[#F5C76A]'
@@ -140,8 +137,7 @@ const Header: React.FC = () => {
                 href="https://donorbox.org/institute-of-forgiveness"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="ml-3 hidden lg:inline-flex h-[40px] items-center justify-center rounded-full bg-[#F5C76A] px-[20px] text-[14px] font-[600] text-[#3D1E4D] transition hover:bg-[#FFD888] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#3D1E4D]"
-                id="lato-font"
+                className="ml-3 hidden lg:inline-flex h-[40px] items-center justify-center rounded-full bg-[#F5C76A] px-[20px] text-[14px] font-[600] text-[#3D1E4D] transition hover:bg-[#FFD888] lato-font"
               >
                 Donate
               </a>
@@ -149,7 +145,7 @@ const Header: React.FC = () => {
               <button
                 type="button"
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className="lg:hidden p-2 text-white hover:text-[#F5C76A] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F5C76A] rounded"
+                className="lg:hidden p-2 text-white hover:text-[#F5C76A]"
                 aria-label={isMobileMenuOpen ? 'Close menu' : 'Open menu'}
               >
                 {isMobileMenuOpen ? (
@@ -181,7 +177,7 @@ const Header: React.FC = () => {
                     <Link
                       href={item.path}
                       onClick={handleLinkClick}
-                      className={`block rounded-lg px-4 py-2 text-sm font-[600] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F5C76A] ${
+                      className={`block rounded-lg px-4 py-2 text-sm font-[600] ${
                         isActive(item.path)
                           ? 'bg-white/10 text-[#F5C76A]'
                           : 'text-white/85 hover:bg-white/10'

@@ -10,11 +10,8 @@ export const metadata: Metadata = {
 export default function PrivacyPolicy() {
   return (
     <main className="bg-[#FBF6EC] pt-[140px] pb-[80px]">
-      <div className="mx-auto w-[92%] max-w-[860px]" id="lato-font">
-        <h1
-          className="text-[36px] md:text-[44px] font-[500] text-[#3D1E4D] mb-[8px]"
-          id="faustina-font"
-        >
+      <div className="mx-auto w-[92%] max-w-[860px] lato-font">
+        <h1 className="text-[36px] md:text-[44px] font-[500] text-[#3D1E4D] mb-[8px] faustina-font">
           Privacy Policy
         </h1>
         <p className="text-[14px] text-[#2A1430]/60 mb-[28px]">Effective Date: 2026-05-14</p>
@@ -26,7 +23,7 @@ export default function PrivacyPolicy() {
             committed to protecting any information you share with us through this website.
           </p>
 
-          <h2 className="text-[24px] font-[500] text-[#3D1E4D] pt-[20px]" id="faustina-font">
+          <h2 className="text-[24px] font-[500] text-[#3D1E4D] pt-[20px] faustina-font">
             Information we collect
           </h2>
           <p>
@@ -34,7 +31,7 @@ export default function PrivacyPolicy() {
             call our office, or use our donation processor. We do not sell personal information.
           </p>
 
-          <h2 className="text-[24px] font-[500] text-[#3D1E4D] pt-[20px]" id="faustina-font">
+          <h2 className="text-[24px] font-[500] text-[#3D1E4D] pt-[20px] faustina-font">
             Donations
           </h2>
           <p>
@@ -43,7 +40,7 @@ export default function PrivacyPolicy() {
             tax-deductibility documentation.
           </p>
 
-          <h2 className="text-[24px] font-[500] text-[#3D1E4D] pt-[20px]" id="faustina-font">
+          <h2 className="text-[24px] font-[500] text-[#3D1E4D] pt-[20px] faustina-font">
             Analytics
           </h2>
           <p>
@@ -52,7 +49,7 @@ export default function PrivacyPolicy() {
             cookies through our cookie banner.
           </p>
 
-          <h2 className="text-[24px] font-[500] text-[#3D1E4D] pt-[20px]" id="faustina-font">
+          <h2 className="text-[24px] font-[500] text-[#3D1E4D] pt-[20px] faustina-font">
             Contact us
           </h2>
           <p>

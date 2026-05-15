@@ -6,16 +6,10 @@ const Mission: React.FC = () => {
       <div className="mx-auto w-[92%] max-w-[1180px]">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-[40px] items-start">
           <div className="lg:col-span-5">
-            <p
-              className="text-[13px] uppercase tracking-[0.28em] text-[#7A3B7E] mb-[14px]"
-              id="aria-font"
-            >
+            <p className="text-[13px] uppercase tracking-[0.28em] text-[#7A3B7E] mb-[14px] aria-font">
               Our Mission
             </p>
-            <h2
-              className="text-[34px] md:text-[44px] font-[500] text-[#3D1E4D] leading-[115%]"
-              id="faustina-font"
-            >
+            <h2 className="text-[34px] md:text-[44px] font-[500] text-[#3D1E4D] leading-[115%] faustina-font">
               Rebuilding the foundations of family and community.
             </h2>
             <div className="mt-[28px] inline-block rounded-full bg-[#3D1E4D] px-[18px] py-[8px] text-[13px] font-[600] text-[#F5C76A]">
@@ -43,7 +37,7 @@ const Mission: React.FC = () => {
               ))}
             </div>
           </div>
-          <div className="lg:col-span-7 space-y-[22px]" id="lato-font">
+          <div className="lg:col-span-7 space-y-[22px] lato-font">
             <p className="text-[18px] leading-[170%] text-[#2A1430]">
               A professional barber and a battle for forgiveness. Sheba Williams is the founder of
               the Institute of Forgiveness; she uses her skills, training, and lived experience to

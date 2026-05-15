@@ -10,11 +10,8 @@ export const metadata: Metadata = {
 export default function TermsOfService() {
   return (
     <main className="bg-[#FBF6EC] pt-[140px] pb-[80px]">
-      <div className="mx-auto w-[92%] max-w-[860px]" id="lato-font">
-        <h1
-          className="text-[36px] md:text-[44px] font-[500] text-[#3D1E4D] mb-[8px]"
-          id="faustina-font"
-        >
+      <div className="mx-auto w-[92%] max-w-[860px] lato-font">
+        <h1 className="text-[36px] md:text-[44px] font-[500] text-[#3D1E4D] mb-[8px] faustina-font">
           Terms of Service
         </h1>
         <p className="text-[14px] text-[#2A1430]/60 mb-[28px]">Effective Date: 2026-05-14</p>
@@ -25,7 +22,7 @@ export default function TermsOfService() {
             you do not agree, please do not use this site.
           </p>
 
-          <h2 className="text-[24px] font-[500] text-[#3D1E4D] pt-[20px]" id="faustina-font">
+          <h2 className="text-[24px] font-[500] text-[#3D1E4D] pt-[20px] faustina-font">
             Use of the site
           </h2>
           <p>
@@ -34,7 +31,7 @@ export default function TermsOfService() {
             program names to imply endorsement without written permission.
           </p>
 
-          <h2 className="text-[24px] font-[500] text-[#3D1E4D] pt-[20px]" id="faustina-font">
+          <h2 className="text-[24px] font-[500] text-[#3D1E4D] pt-[20px] faustina-font">
             Donations
           </h2>
           <p>
@@ -44,7 +41,7 @@ export default function TermsOfService() {
             for monetary contributions.
           </p>
 
-          <h2 className="text-[24px] font-[500] text-[#3D1E4D] pt-[20px]" id="faustina-font">
+          <h2 className="text-[24px] font-[500] text-[#3D1E4D] pt-[20px] faustina-font">
             Third-party services
           </h2>
           <p>
@@ -52,9 +49,7 @@ export default function TermsOfService() {
             social platforms (engagement). Their terms govern your interactions on those platforms.
           </p>
 
-          <h2 className="text-[24px] font-[500] text-[#3D1E4D] pt-[20px]" id="faustina-font">
-            Contact
-          </h2>
+          <h2 className="text-[24px] font-[500] text-[#3D1E4D] pt-[20px] faustina-font">Contact</h2>
           <p>
             Questions about these terms? Email{' '}
             <Link

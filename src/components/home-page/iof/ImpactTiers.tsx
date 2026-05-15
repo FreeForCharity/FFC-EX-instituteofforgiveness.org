@@ -34,19 +34,13 @@ const ImpactTiers: React.FC = () => {
     <section id="impact" className="w-full bg-[#F5E9D2] py-[90px] lg:py-[120px]">
       <div className="mx-auto w-[92%] max-w-[1180px]">
         <div className="mb-[48px] max-w-[720px]">
-          <p
-            className="text-[13px] uppercase tracking-[0.28em] text-[#7A3B7E] mb-[14px]"
-            id="aria-font"
-          >
+          <p className="text-[13px] uppercase tracking-[0.28em] text-[#7A3B7E] mb-[14px] aria-font">
             Your Impact
           </p>
-          <h2
-            className="text-[34px] md:text-[44px] font-[500] text-[#3D1E4D] leading-[115%]"
-            id="faustina-font"
-          >
+          <h2 className="text-[34px] md:text-[44px] font-[500] text-[#3D1E4D] leading-[115%] faustina-font">
             Every gift is a concrete second chance.
           </h2>
-          <p className="mt-[18px] text-[17px] leading-[165%] text-[#2A1430]/80" id="lato-font">
+          <p className="mt-[18px] text-[17px] leading-[165%] text-[#2A1430]/80 lato-font">
             These are the real, named programs your donation funds. Tax-deductible to the extent
             allowed by law — EIN 47-5341386.
           </p>
@@ -58,13 +52,10 @@ const ImpactTiers: React.FC = () => {
               key={tier.amount}
               className="relative flex flex-col rounded-[20px] bg-white border border-[#3D1E4D]/15 p-[26px] transition hover:shadow-lg hover:-translate-y-1 hover:border-[#F5C76A]"
             >
-              <span
-                className="text-[40px] font-[600] text-[#7A3B7E] leading-none mb-[12px]"
-                id="faustina-font"
-              >
+              <span className="text-[40px] font-[600] text-[#7A3B7E] leading-none mb-[12px] faustina-font">
                 {tier.amount}
               </span>
-              <p className="text-[15px] leading-[160%] text-[#2A1430]/85" id="lato-font">
+              <p className="text-[15px] leading-[160%] text-[#2A1430]/85 lato-font">
                 {tier.impact}
               </p>
             </div>
