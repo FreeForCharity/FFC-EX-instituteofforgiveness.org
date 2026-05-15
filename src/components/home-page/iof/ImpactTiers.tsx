@@ -56,7 +56,7 @@ const ImpactTiers: React.FC = () => {
           {tiers.map((tier) => (
             <div
               key={tier.amount}
-              className="relative flex flex-col rounded-[20px] bg-white border border-[#3D1E4D]/8 p-[26px] transition hover:shadow-lg hover:-translate-y-1"
+              className="relative flex flex-col rounded-[20px] bg-white border border-[#3D1E4D]/15 p-[26px] transition hover:shadow-lg hover:-translate-y-1 hover:border-[#F5C76A]"
             >
               <span
                 className="text-[40px] font-[600] text-[#7A3B7E] leading-none mb-[12px]"

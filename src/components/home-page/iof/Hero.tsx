@@ -73,7 +73,7 @@ const Hero: React.FC = () => {
 
         {/* Right column: pillar quote card */}
         <div className="w-full lg:w-[42%]">
-          <div className="relative rounded-[28px] bg-white/8 backdrop-blur-md border border-white/20 p-[32px] lg:p-[40px] shadow-2xl">
+          <div className="relative rounded-[28px] bg-white/[0.14] backdrop-blur-md border border-white/30 p-[32px] lg:p-[40px] shadow-2xl">
             <div
               aria-hidden="true"
               className="absolute -top-[18px] left-[28px] text-[88px] leading-none text-[#F5C76A] font-serif"

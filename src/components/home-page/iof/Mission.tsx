@@ -21,6 +21,27 @@ const Mission: React.FC = () => {
             <div className="mt-[28px] inline-block rounded-full bg-[#3D1E4D] px-[18px] py-[8px] text-[13px] font-[600] text-[#F5C76A]">
               A subsidiary of Nolef Turns Inc. &middot; 501(c)(3)
             </div>
+
+            {/* Visual anchor: three programme pillars */}
+            <div className="mt-[36px] space-y-[14px]">
+              {(
+                [
+                  { label: 'Trade Training', desc: 'Barbering & cosmetology licensure' },
+                  { label: 'Mentoring', desc: 'Lived experience guides the way' },
+                  { label: 'Re-Entry Support', desc: 'Dignity from day one' },
+                ] as const
+              ).map((item) => (
+                <div key={item.label} className="flex items-center gap-[12px]">
+                  <div className="w-[6px] h-[6px] rounded-full bg-[#F5C76A] flex-shrink-0 ring-2 ring-[#E08540]/50" />
+                  <span className="text-[15px] font-[600] text-[#3D1E4D] [font-family:var(--font-lato,sans-serif)]">
+                    {item.label}
+                  </span>
+                  <span className="text-[14px] text-[#3D1E4D]/60 [font-family:var(--font-lato,sans-serif)]">
+                    — {item.desc}
+                  </span>
+                </div>
+              ))}
+            </div>
           </div>
           <div className="lg:col-span-7 space-y-[22px]" id="lato-font">
             <p className="text-[18px] leading-[170%] text-[#2A1430]">
