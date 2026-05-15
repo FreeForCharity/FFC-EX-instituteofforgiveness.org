@@ -14,23 +14,17 @@ const AboutPage: React.FC = () => {
     <main className="bg-[#FBF6EC]">
       <section className="bg-[#3D1E4D] py-[120px] text-white">
         <div className="mx-auto w-[92%] max-w-[1080px]">
-          <p
-            className="text-[13px] uppercase tracking-[0.28em] text-[#F5C76A] mb-[14px]"
-            id="aria-font"
-          >
+          <p className="text-[13px] uppercase tracking-[0.28em] text-[#F5C76A] mb-[14px] aria-font">
             About the Institute
           </p>
-          <h1
-            className="text-[42px] md:text-[56px] font-[500] leading-[115%] max-w-[820px]"
-            id="faustina-font"
-          >
+          <h1 className="text-[42px] md:text-[56px] font-[500] leading-[115%] max-w-[820px] faustina-font">
             Forgiveness is the practical work of a more humane justice system.
           </h1>
         </div>
       </section>
 
       <section className="py-[80px] lg:py-[110px]">
-        <div className="mx-auto w-[92%] max-w-[860px] space-y-[26px]" id="lato-font">
+        <div className="mx-auto w-[92%] max-w-[860px] space-y-[26px] lato-font">
           <p className="text-[18px] leading-[175%] text-[#2A1430]">
             A professional barber and a battle for forgiveness — Sheba Williams is the founder of
             the Institute of Forgiveness. She uses her skills, training, and lived experience to
@@ -66,7 +60,7 @@ const AboutPage: React.FC = () => {
           </p>
 
           <div className="mt-[40px] rounded-[20px] bg-white border border-[#3D1E4D]/10 p-[28px]">
-            <h2 className="text-[24px] font-[500] text-[#3D1E4D] mb-[10px]" id="faustina-font">
+            <h2 className="text-[24px] font-[500] text-[#3D1E4D] mb-[10px] faustina-font">
               How we are organized
             </h2>
             <p className="text-[16px] leading-[170%] text-[#2A1430]/85">
