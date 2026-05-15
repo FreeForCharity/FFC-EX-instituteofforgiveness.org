@@ -30,7 +30,7 @@ const Contact: React.FC = () => {
           <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-[18px]" id="lato-font">
             <a
               href="tel:8049186195"
-              className="group flex flex-col rounded-[18px] border border-[#3D1E4D]/12 bg-[#FBF6EC] p-[24px] transition hover:border-[#F5C76A] hover:bg-[#F5E9D2]"
+              className="group flex flex-col rounded-[18px] border border-[#3D1E4D]/20 bg-[#FBF6EC] p-[24px] transition hover:border-[#F5C76A] hover:bg-[#F5E9D2]"
             >
               <span
                 className="text-[12px] uppercase tracking-[0.24em] text-[#7A3B7E] mb-[10px]"
@@ -45,7 +45,7 @@ const Contact: React.FC = () => {
 
             <a
               href="mailto:info@instituteofforgiveness.org"
-              className="group flex flex-col rounded-[18px] border border-[#3D1E4D]/12 bg-[#FBF6EC] p-[24px] transition hover:border-[#F5C76A] hover:bg-[#F5E9D2]"
+              className="group flex flex-col rounded-[18px] border border-[#3D1E4D]/20 bg-[#FBF6EC] p-[24px] transition hover:border-[#F5C76A] hover:bg-[#F5E9D2]"
             >
               <span
                 className="text-[12px] uppercase tracking-[0.24em] text-[#7A3B7E] mb-[10px]"
@@ -62,7 +62,7 @@ const Contact: React.FC = () => {
               href="https://www.google.com/maps/search/?api=1&query=2317+Westwood+Ave+Suite+115-C+Richmond+VA+23230"
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex flex-col rounded-[18px] border border-[#3D1E4D]/12 bg-[#FBF6EC] p-[24px] transition hover:border-[#F5C76A] hover:bg-[#F5E9D2] sm:col-span-2"
+              className="group flex flex-col rounded-[18px] border border-[#3D1E4D]/20 bg-[#FBF6EC] p-[24px] transition hover:border-[#F5C76A] hover:bg-[#F5E9D2] sm:col-span-2"
             >
               <span
                 className="text-[12px] uppercase tracking-[0.24em] text-[#7A3B7E] mb-[10px]"
@@ -82,7 +82,7 @@ const Contact: React.FC = () => {
               </span>
             </a>
 
-            <div className="flex flex-col rounded-[18px] border border-[#3D1E4D]/12 bg-[#FBF6EC] p-[24px] sm:col-span-2">
+            <div className="flex flex-col rounded-[18px] border border-[#3D1E4D]/20 bg-[#FBF6EC] p-[24px] sm:col-span-2">
               <span
                 className="text-[12px] uppercase tracking-[0.24em] text-[#7A3B7E] mb-[14px]"
                 id="aria-font"
