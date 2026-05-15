@@ -123,7 +123,7 @@ const Header: React.FC = () => {
                       <Link
                         href={item.path}
                         onClick={handleLinkClick}
-                        className={`flex items-center px-3 py-2 text-[14px] font-[500] transition-colors duration-200 ${
+                        className={`flex items-center px-3 py-2 text-[14px] font-[500] transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F5C76A] rounded ${
                           isActive(item.path)
                             ? 'text-[#F5C76A]'
                             : 'text-white/80 hover:text-[#F5C76A]'
@@ -140,7 +140,7 @@ const Header: React.FC = () => {
                 href="https://donorbox.org/institute-of-forgiveness"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="ml-3 hidden lg:inline-flex h-[40px] items-center justify-center rounded-full bg-[#F5C76A] px-[20px] text-[14px] font-[600] text-[#3D1E4D] transition hover:bg-[#FFD888]"
+                className="ml-3 hidden lg:inline-flex h-[40px] items-center justify-center rounded-full bg-[#F5C76A] px-[20px] text-[14px] font-[600] text-[#3D1E4D] transition hover:bg-[#FFD888] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#3D1E4D]"
                 id="lato-font"
               >
                 Donate
@@ -149,7 +149,7 @@ const Header: React.FC = () => {
               <button
                 type="button"
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className="lg:hidden p-2 text-white hover:text-[#F5C76A]"
+                className="lg:hidden p-2 text-white hover:text-[#F5C76A] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F5C76A] rounded"
                 aria-label={isMobileMenuOpen ? 'Close menu' : 'Open menu'}
               >
                 {isMobileMenuOpen ? (
@@ -181,7 +181,7 @@ const Header: React.FC = () => {
                     <Link
                       href={item.path}
                       onClick={handleLinkClick}
-                      className={`block rounded-lg px-4 py-2 text-sm font-[600] ${
+                      className={`block rounded-lg px-4 py-2 text-sm font-[600] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F5C76A] ${
                         isActive(item.path)
                           ? 'bg-white/10 text-[#F5C76A]'
                           : 'text-white/85 hover:bg-white/10'
