@@ -8,14 +8,14 @@ import Contact from '@/components/home-page/iof/Contact'
 
 const Index = () => {
   return (
-    <div>
+    <main id="main">
       <Hero />
       <Mission />
       <Programs />
       <ImpactTiers />
       <DonateCTA />
       <Contact />
-    </div>
+    </main>
   )
 }
 
