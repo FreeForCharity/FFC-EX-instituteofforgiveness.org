@@ -13,16 +13,10 @@ const ContactPage: React.FC = () => {
     <main className="bg-[#FBF6EC]">
       <section className="bg-[#3D1E4D] py-[120px] text-white">
         <div className="mx-auto w-[92%] max-w-[1080px]">
-          <p
-            className="text-[13px] uppercase tracking-[0.28em] text-[#F5C76A] mb-[14px]"
-            id="aria-font"
-          >
+          <p className="text-[13px] uppercase tracking-[0.28em] text-[#F5C76A] mb-[14px] aria-font">
             Get in touch
           </p>
-          <h1
-            className="text-[42px] md:text-[56px] font-[500] leading-[115%] max-w-[820px]"
-            id="faustina-font"
-          >
+          <h1 className="text-[42px] md:text-[56px] font-[500] leading-[115%] max-w-[820px] faustina-font">
             Reach the Institute of Forgiveness.
           </h1>
         </div>
@@ -34,16 +28,10 @@ const ContactPage: React.FC = () => {
             href="tel:8049186195"
             className="group rounded-[20px] bg-white border border-[#3D1E4D]/10 p-[32px] transition hover:border-[#F5C76A]"
           >
-            <p
-              className="text-[12px] uppercase tracking-[0.24em] text-[#7A3B7E] mb-[12px]"
-              id="aria-font"
-            >
+            <p className="text-[12px] uppercase tracking-[0.24em] text-[#7A3B7E] mb-[12px] aria-font">
               Phone
             </p>
-            <p
-              className="text-[26px] font-[600] text-[#3D1E4D] group-hover:text-[#7A3B7E]"
-              id="faustina-font"
-            >
+            <p className="text-[26px] font-[600] text-[#3D1E4D] group-hover:text-[#7A3B7E] faustina-font">
               (804) 918-6195
             </p>
           </a>
@@ -52,16 +40,10 @@ const ContactPage: React.FC = () => {
             href="mailto:info@instituteofforgiveness.org"
             className="group rounded-[20px] bg-white border border-[#3D1E4D]/10 p-[32px] transition hover:border-[#F5C76A]"
           >
-            <p
-              className="text-[12px] uppercase tracking-[0.24em] text-[#7A3B7E] mb-[12px]"
-              id="aria-font"
-            >
+            <p className="text-[12px] uppercase tracking-[0.24em] text-[#7A3B7E] mb-[12px] aria-font">
               Email
             </p>
-            <p
-              className="text-[20px] font-[500] text-[#3D1E4D] group-hover:text-[#7A3B7E] break-all"
-              id="lato-font"
-            >
+            <p className="text-[20px] font-[500] text-[#3D1E4D] group-hover:text-[#7A3B7E] break-all lato-font">
               info@instituteofforgiveness.org
             </p>
           </a>
@@ -72,16 +54,10 @@ const ContactPage: React.FC = () => {
             rel="noopener noreferrer"
             className="group md:col-span-2 rounded-[20px] bg-white border border-[#3D1E4D]/10 p-[32px] transition hover:border-[#F5C76A]"
           >
-            <p
-              className="text-[12px] uppercase tracking-[0.24em] text-[#7A3B7E] mb-[12px]"
-              id="aria-font"
-            >
+            <p className="text-[12px] uppercase tracking-[0.24em] text-[#7A3B7E] mb-[12px] aria-font">
               Mailing & Visiting Address
             </p>
-            <p
-              className="text-[20px] font-[500] text-[#3D1E4D] group-hover:text-[#7A3B7E] leading-[150%]"
-              id="lato-font"
-            >
+            <p className="text-[20px] font-[500] text-[#3D1E4D] group-hover:text-[#7A3B7E] leading-[150%] lato-font">
               Institute of Forgiveness
               <br />
               a subsidiary of Nolef Turns Inc.

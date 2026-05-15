@@ -34,22 +34,17 @@ const Footer: React.FC = () => {
         {/* Column 1: About */}
         <div className="space-y-5 px-4 sm:px-0">
           <div className="flex items-center gap-3">
-            <span
-              className="flex h-[48px] w-[48px] items-center justify-center rounded-full bg-[#F5C76A] text-[18px] font-[700] text-[#3D1E4D]"
-              id="cinzel"
-            >
+            <span className="flex h-[48px] w-[48px] items-center justify-center rounded-full bg-[#F5C76A] text-[18px] font-[700] text-[#3D1E4D] cinzel">
               IoF
             </span>
-            <h3 className="text-[22px] font-[600]" id="faustina-font">
-              Institute of Forgiveness
-            </h3>
+            <h3 className="text-[22px] font-[600] faustina-font">Institute of Forgiveness</h3>
           </div>
-          <p className="text-[15px] leading-[170%] text-white/80" id="lato-font">
+          <p className="text-[15px] leading-[170%] text-white/80 lato-font">
             A mentoring institute for those with previous justice involvement. We work toward
             juvenile and criminal justice reform and rebuilding the core foundations of family and
             community.
           </p>
-          <p className="text-[14px] text-[#F5C76A]" id="lato-font">
+          <p className="text-[14px] text-[#F5C76A] lato-font">
             A subsidiary of{' '}
             <Link
               href="https://www.nolefturns.org"
@@ -65,10 +60,8 @@ const Footer: React.FC = () => {
 
         {/* Column 2: Quick Links */}
         <div className="space-y-5 px-4 sm:px-0">
-          <h3 className="text-[20px] font-[600] text-[#F5C76A]" id="faustina-font">
-            Explore
-          </h3>
-          <ul className="space-y-2 text-sm" id="lato-font">
+          <h3 className="text-[20px] font-[600] text-[#F5C76A] faustina-font">Explore</h3>
+          <ul className="space-y-2 text-sm lato-font">
             {[
               { name: 'Home', href: '/#hero' },
               { name: 'Mission', href: '/#mission' },
@@ -96,10 +89,8 @@ const Footer: React.FC = () => {
           </ul>
 
           <div className="space-y-2">
-            <h4 className="text-[16px] font-[600] text-[#F5C76A]" id="faustina-font">
-              Policies
-            </h4>
-            <ul className="space-y-1 text-sm" id="lato-font">
+            <h4 className="text-[16px] font-[600] text-[#F5C76A] faustina-font">Policies</h4>
+            <ul className="space-y-1 text-sm lato-font">
               <li>
                 <Link
                   href="/privacy-policy"
@@ -122,9 +113,7 @@ const Footer: React.FC = () => {
 
         {/* Column 3: Contact */}
         <div className="space-y-5 px-4 sm:px-0">
-          <h3 className="text-[20px] font-[600] text-[#F5C76A]" id="faustina-font">
-            Contact
-          </h3>
+          <h3 className="text-[20px] font-[600] text-[#F5C76A] faustina-font">Contact</h3>
           <div className="space-y-4 text-sm">
             <div className="flex items-start gap-3">
               <Mail className="mt-0.5 h-6 w-6 flex-shrink-0 text-[#F5C76A]" />
@@ -132,8 +121,7 @@ const Footer: React.FC = () => {
                 <p className="text-[15px] font-[500] text-white/70">E-mail</p>
                 <a
                   href="mailto:info@instituteofforgiveness.org"
-                  className="text-[15px] font-[500] text-white transition-colors hover:text-[#F5C76A] break-all"
-                  id="lato-font"
+                  className="text-[15px] font-[500] text-white transition-colors hover:text-[#F5C76A] break-all lato-font"
                 >
                   info@instituteofforgiveness.org
                 </a>
@@ -146,8 +134,7 @@ const Footer: React.FC = () => {
                 <p className="text-[15px] font-[500] text-white/70">Phone</p>
                 <a
                   href="tel:8049186195"
-                  className="text-[15px] font-[500] text-white transition-colors hover:text-[#F5C76A]"
-                  id="lato-font"
+                  className="text-[15px] font-[500] text-white transition-colors hover:text-[#F5C76A] lato-font"
                 >
                   (804) 918-6195
                 </a>
@@ -164,7 +151,7 @@ const Footer: React.FC = () => {
               <MapPin className="mt-0.5 h-6 w-6 flex-shrink-0 text-[#F5C76A]" />
               <div>
                 <p className="text-[15px] font-[500] text-white/70">Address</p>
-                <p className="text-[15px] font-[500] text-white" id="lato-font">
+                <p className="text-[15px] font-[500] text-white lato-font">
                   2317 Westwood Ave. Ste. 115-C
                   <br />
                   Richmond, VA 23230-4019
@@ -190,10 +177,7 @@ const Footer: React.FC = () => {
         </div>
       </div>
 
-      <div
-        className="mt-8 w-full border-t border-white/10 px-4 py-6 text-center text-[14px] font-[500]"
-        id="lato-font"
-      >
+      <div className="mt-8 w-full border-t border-white/10 px-4 py-6 text-center text-[14px] font-[500] lato-font">
         <p>
           &copy; {currentYear} Institute of Forgiveness. All rights reserved. &middot; Hosted by{' '}
           <Link

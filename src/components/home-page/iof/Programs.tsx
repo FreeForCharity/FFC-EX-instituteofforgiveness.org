@@ -111,17 +111,14 @@ const Programs: React.FC = () => {
       <div className="mx-auto w-[92%] max-w-[1180px]">
         <div className="mb-[56px] flex flex-col md:flex-row md:items-end md:justify-between gap-[24px]">
           <div className="max-w-[680px]">
-            <p
-              className="text-[13px] uppercase tracking-[0.28em] text-[#F5C76A] mb-[14px]"
-              id="aria-font"
-            >
+            <p className="text-[13px] uppercase tracking-[0.28em] text-[#F5C76A] mb-[14px] aria-font">
               What We Do
             </p>
-            <h2 className="text-[34px] md:text-[44px] font-[500] leading-[115%]" id="faustina-font">
+            <h2 className="text-[34px] md:text-[44px] font-[500] leading-[115%] faustina-font">
               Programs that turn second chances into long-term change.
             </h2>
           </div>
-          <p className="max-w-[380px] text-[16px] leading-[160%] text-white/75" id="lato-font">
+          <p className="max-w-[380px] text-[16px] leading-[160%] text-white/75 lato-font">
             Every dollar funds training, basic-need support, and business startup assistance for
             people with current or previous justice involvement.
           </p>
@@ -136,12 +133,11 @@ const Programs: React.FC = () => {
               <div className="mb-[18px] inline-flex h-[48px] w-[48px] items-center justify-center rounded-full bg-[#F5C76A] text-[#3D1E4D]">
                 {program.icon}
               </div>
-              <h3 className="text-[22px] font-[500] leading-[125%] mb-[10px]" id="faustina-font">
+              <h3 className="text-[22px] font-[500] leading-[125%] mb-[10px] faustina-font">
                 {program.title}
               </h3>
               <p
-                className="text-[15px] leading-[165%] text-white/75"
-                id="lato-font"
+                className="text-[15px] leading-[165%] text-white/75 lato-font"
                 dangerouslySetInnerHTML={{ __html: program.description }}
               />
             </article>
