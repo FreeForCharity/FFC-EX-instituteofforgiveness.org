@@ -62,12 +62,13 @@ export default function PrivacyPolicy() {
           <p>
             If you visit from the European Union, the United Kingdom, or the wider European Economic
             Area, the EU GDPR or UK GDPR applies to our handling of your personal data. We process
-            personal data only with your consent (analytics and marketing cookies, as described
-            above), on our legitimate interests (operating and securing this website), or to comply
-            with a legal obligation. You have the right to access the personal data we hold about
-            you; to have inaccurate data rectified; to have your data erased; to restrict or object
-            to processing; to receive your data in a portable format; and to withdraw any consent
-            you have given, at any time, without affecting the lawfulness of processing before
+            personal data only with your consent (the analytics cookies described above, and any
+            marketing cookies you choose to enable through the cookie consent banner), on our
+            legitimate interests (operating and securing this website), or to comply with a legal
+            obligation. You have the right to access the personal data we hold about you; to have
+            inaccurate data rectified; to have your data erased; to restrict or object to
+            processing; to receive your data in a portable format; and to withdraw any consent you
+            have given, at any time, without affecting the lawfulness of processing before
             withdrawal. To exercise any of these rights, contact us using the details below; we will
             respond within the time limits the GDPR sets. You also have the right to lodge a
             complaint with your national data protection supervisory authority (in the UK, the
