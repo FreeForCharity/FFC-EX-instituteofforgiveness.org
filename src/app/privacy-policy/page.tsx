@@ -14,7 +14,7 @@ export default function PrivacyPolicy() {
         <h1 className="text-[36px] md:text-[44px] font-[500] text-[#3D1E4D] mb-[8px] faustina-font">
           Privacy Policy
         </h1>
-        <p className="text-[14px] text-[#2A1430]/60 mb-[28px]">Effective Date: 2026-05-14</p>
+        <p className="text-[14px] text-[#2A1430]/60 mb-[28px]">Effective Date: 2026-08-30</p>
 
         <div className="space-y-[20px] text-[16px] leading-[175%] text-[#2A1430]/90">
           <p>
@@ -44,9 +44,56 @@ export default function PrivacyPolicy() {
             Analytics
           </h2>
           <p>
-            We may use Google Tag Manager and Google Analytics to understand how visitors use the
-            site in aggregate. You can opt out via browser settings or by declining non-essential
-            cookies through our cookie banner.
+            We use Google Tag Manager and Google Analytics, with Google Consent Mode, to understand
+            how visitors use the site in aggregate. If you visit from the European Economic Area,
+            the United Kingdom, or Switzerland, Google&apos;s tags set no cookies and read no
+            identifiers until you accept through the cookie consent banner — until then only
+            aggregate, cookieless measurement takes place. Everywhere else, including the United
+            States, analytics cookies are set from your first pageview. Which of these rules applies
+            to your visit is determined by Google from your IP address at the time of your visit; IP
+            geolocation is approximate. You can decline or withdraw consent at any time via the
+            cookie banner or the Cookie Preferences link in the footer — this site then deletes the
+            tracking cookies it set and Google&apos;s tags return to the cookieless state.
+          </p>
+
+          <h2 className="text-[24px] font-[500] text-[#3D1E4D] pt-[20px] faustina-font">
+            Your rights in the EU, UK, and EEA (GDPR)
+          </h2>
+          <p>
+            If you visit from the European Union, the United Kingdom, or the wider European Economic
+            Area, the EU GDPR or UK GDPR applies to our handling of your personal data. We process
+            personal data only with your consent (analytics and marketing cookies, as described
+            above), on our legitimate interests (operating and securing this website), or to comply
+            with a legal obligation. You have the right to access the personal data we hold about
+            you; to have inaccurate data rectified; to have your data erased; to restrict or object
+            to processing; to receive your data in a portable format; and to withdraw any consent
+            you have given, at any time, without affecting the lawfulness of processing before
+            withdrawal. To exercise any of these rights, contact us using the details below; we will
+            respond within the time limits the GDPR sets. You also have the right to lodge a
+            complaint with your national data protection supervisory authority (in the UK, the
+            Information Commissioner&apos;s Office).
+          </p>
+
+          <h2 className="text-[24px] font-[500] text-[#3D1E4D] pt-[20px] faustina-font">
+            Your California privacy rights (CCPA/CPRA)
+          </h2>
+          <p>
+            If you are a California resident, the CCPA, as amended by the CPRA, gives you specific
+            rights. We do not sell personal information, and we do not share it for cross-context
+            behavioral advertising, as those terms are defined by California law — and have not done
+            so in the preceding 12 months. You have the right to know what personal information we
+            collect, use, and disclose, and to access it; to delete personal information we
+            collected from you; to correct inaccurate personal information; to opt out of any sale
+            or sharing (not applicable, since we do neither); to limit the use of sensitive personal
+            information; and not to be discriminated against for exercising any of these rights.
+            This site does not read or respond to the Global Privacy Control or Do Not Track browser
+            signals — we do not sell or share personal information, so there is nothing for those
+            signals to opt out of. Analytics cookies are set automatically for visitors outside the
+            EEA, the UK, and Switzerland; any visitor can turn them off at any time via the Cookie
+            Preferences link in the footer, and we delete the cookies when you do. To exercise your
+            rights, contact us using the details below; we will verify your request using
+            information associated with your interactions with us, you may use an authorized agent,
+            and we will respond within the timeframes California law requires.
           </p>
 
           <h2 className="text-[24px] font-[500] text-[#3D1E4D] pt-[20px] faustina-font">
