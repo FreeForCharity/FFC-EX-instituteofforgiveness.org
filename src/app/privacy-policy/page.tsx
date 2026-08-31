@@ -48,9 +48,11 @@ export default function PrivacyPolicy() {
             how visitors use the site in aggregate. If you visit from the European Economic Area,
             the United Kingdom, or Switzerland, Google&apos;s tags set no cookies and read no
             identifiers until you accept through the cookie consent banner — until then only
-            aggregate, cookieless measurement takes place. Everywhere else, including the United
-            States, analytics cookies are set from your first pageview. Which of these rules applies
-            to your visit is determined by Google from your IP address at the time of your visit; IP
+            aggregate, cookieless measurement takes place. (Switzerland is included because
+            Google&apos;s consent defaults cover it; Swiss visitors&apos; data is protected by the
+            Swiss FADP rather than the GDPR.) Everywhere else, including the United States,
+            analytics cookies are set from your first pageview. Which of these rules applies to your
+            visit is determined by Google from your IP address at the time of your visit; IP
             geolocation is approximate. You can decline or withdraw consent at any time via the
             cookie banner or the Cookie Preferences link in the footer — this site then deletes the
             tracking cookies it set and Google&apos;s tags return to the cookieless state.
