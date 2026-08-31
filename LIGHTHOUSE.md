@@ -142,9 +142,8 @@ The Lighthouse CI configuration is in `lighthouserc.json`:
       "staticDistDir": "./out",
       "url": [
         "http://localhost/index.html",
-        "http://localhost/cookie-policy.html",
-        "http://localhost/privacy-policy.html",
-        "http://localhost/terms-of-service.html"
+        "http://localhost/privacy-policy/index.html",
+        "http://localhost/terms-of-service/index.html"
       ],
       "numberOfRuns": 3
     }
@@ -152,9 +151,20 @@ The Lighthouse CI configuration is in `lighthouserc.json`:
 }
 ```
 
-**Important**: URLs should point to the actual `.html` files in the `out` directory. Next.js static export generates flat HTML files at the root level. This site has a single homepage with sections (About Us, Donate, Volunteer) rather than separate pages for those features. However, the policy pages are separate routes that generate individual HTML files.
+**Important**: URLs must name files that actually exist in `out/`, and the shape
+depends on `trailingSlash`. This site sets `trailingSlash: true` in
+`next.config.ts`, so the static export writes a directory per route with an
+`index.html` inside it — `privacy-policy/index.html`, not `privacy-policy.html`.
+A URL naming a file the export never wrote does not merely get skipped:
+Lighthouse fails the run with `ERRORED_DOCUMENT_REQUEST` before scoring
+anything, so the whole audit goes red on a typo.
 
-You can add more pages to audit by adding URLs to the `url` array. To see which pages are generated, check the `out/` directory after running `pnpm run build`.
+This fork also has no `cookie-policy` route. The list above used to carry one,
+inherited from the template, which is what kept the audit red.
+
+You can add more pages by adding URLs to the `url` array. Routes that exist here
+but are not currently audited: `about/`, `contact/`, `donate/`. To confirm what
+the export produced, look in `out/` after `pnpm run build`.
 
 ---
 
