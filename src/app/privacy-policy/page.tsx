@@ -46,8 +46,8 @@ export default function PrivacyPolicy() {
           <p>
             We use Google Tag Manager and Google Analytics, with Google Consent Mode, to understand
             how visitors use the site in aggregate. Google&apos;s tags set no analytics or
-            advertising cookies and read no measurement identifiers until you accept through the
-            cookie consent banner, wherever in the world you are — until then only aggregate,
+            advertising cookies and read no identifiers from your device until you accept through
+            the cookie consent banner, wherever in the world you are — until then only aggregate,
             cookieless measurement takes place. (Switzerland is included because Google&apos;s
             consent defaults cover it; the data of visitors in Switzerland is protected by
             Switzerland&apos;s Federal Act on Data Protection (FADP) rather than the GDPR.) There is
