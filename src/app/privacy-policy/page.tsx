@@ -48,14 +48,13 @@ export default function PrivacyPolicy() {
             how visitors use the site in aggregate. Google&apos;s tags set no analytics or
             advertising cookies and read no identifiers from your device until you accept through
             the cookie consent banner, wherever in the world you are — until then only aggregate,
-            cookieless measurement takes place. (Switzerland is included because Google&apos;s
-            consent defaults cover it; the data of visitors in Switzerland is protected by
-            Switzerland&apos;s Federal Act on Data Protection (FADP) rather than the GDPR.) There is
-            no country in which analytics cookies are set before you choose. The same rule applies
-            to every visitor, so nothing depends on where you are. You can decline or withdraw
-            consent at any time via the cookie banner or the Cookie Preferences link in the footer —
-            this site then deletes the tracking cookies it set and Google&apos;s tags return to the
-            cookieless state.
+            cookieless measurement takes place. (Visitors in Switzerland are protected by
+            Switzerland&apos;s Federal Act on Data Protection (FADP) rather than the GDPR; the
+            treatment described here is the same either way.) There is no country in which analytics
+            cookies are set before you choose. The same rule applies to every visitor, so nothing
+            depends on where you are. You can decline or withdraw consent at any time via the cookie
+            banner or the Cookie Preferences link in the footer — this site then deletes the
+            tracking cookies it set and Google&apos;s tags return to the cookieless state.
           </p>
 
           <h2 className="text-[24px] font-[500] text-[#3D1E4D] pt-[20px] faustina-font">
