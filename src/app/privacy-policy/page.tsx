@@ -45,18 +45,17 @@ export default function PrivacyPolicy() {
           </h2>
           <p>
             We use Google Tag Manager and Google Analytics, with Google Consent Mode, to understand
-            how visitors use the site in aggregate. If you visit from the European Economic Area,
-            the United Kingdom, or Switzerland, Google&apos;s tags set no cookies and read no
-            identifiers until you accept through the cookie consent banner — until then only
-            aggregate, cookieless measurement takes place. (Switzerland is included because
-            Google&apos;s consent defaults cover it; the data of visitors in Switzerland is
-            protected by Switzerland&apos;s Federal Act on Data Protection (FADP) rather than the
-            GDPR.) Everywhere else, including the United States, analytics cookies are set from your
-            first pageview. Which of these rules applies to your visit is determined by Google from
-            your IP address at the time of your visit; IP geolocation is approximate. You can
-            decline or withdraw consent at any time via the cookie banner or the Cookie Preferences
-            link in the footer — this site then deletes the tracking cookies it set and
-            Google&apos;s tags return to the cookieless state.
+            how visitors use the site in aggregate. Google&apos;s tags set no analytics or
+            advertising cookies and read no measurement identifiers until you accept through the
+            cookie consent banner, wherever in the world you are — until then only aggregate,
+            cookieless measurement takes place. (Switzerland is included because Google&apos;s
+            consent defaults cover it; the data of visitors in Switzerland is protected by
+            Switzerland&apos;s Federal Act on Data Protection (FADP) rather than the GDPR.) There is
+            no country in which analytics cookies are set before you choose. The same rule applies
+            to every visitor, so nothing depends on where you are. You can decline or withdraw
+            consent at any time via the cookie banner or the Cookie Preferences link in the footer —
+            this site then deletes the tracking cookies it set and Google&apos;s tags return to the
+            cookieless state.
           </p>
 
           <h2 className="text-[24px] font-[500] text-[#3D1E4D] pt-[20px] faustina-font">
@@ -92,12 +91,12 @@ export default function PrivacyPolicy() {
             information; and not to be discriminated against for exercising any of these rights.
             This site does not read or respond to the Global Privacy Control or Do Not Track browser
             signals — we do not sell or share personal information, so there is nothing for those
-            signals to opt out of. Analytics cookies are set automatically for visitors outside the
-            EEA, the UK, and Switzerland; any visitor can turn them off at any time via the Cookie
-            Preferences link in the footer, and we delete the cookies when you do. To exercise your
-            rights, contact us using the details below; we will verify your request using
-            information associated with your interactions with us, you may use an authorized agent,
-            and we will respond within the timeframes California law requires.
+            signals to opt out of. Analytics cookies are never set before you accept, anywhere in
+            the world; you can turn them off again at any time via the Cookie Preferences link in
+            the footer, and we delete the cookies when you do. To exercise your rights, contact us
+            using the details below; we will verify your request using information associated with
+            your interactions with us, you may use an authorized agent, and we will respond within
+            the timeframes California law requires.
           </p>
 
           <h2 className="text-[24px] font-[500] text-[#3D1E4D] pt-[20px] faustina-font">
